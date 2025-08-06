@@ -1,0 +1,55 @@
+Este arquivo é destinado para o registro de criação do diagrama no programa draw.io a partir de um código sql.
+
+create table User(
+user_id,
+username,
+user_email,
+user_password,
+);
+
+create table user_metadata(
+user_id,
+full_name,
+cpf,
+rg,
+photo_profile_url,
+birth_date,
+registered_at,
+last_login,
+last_purchase,
+created_by,
+updated_at     
+);
+
+create table order(
+order_id,
+user_id,
+total_amout,
+item_count,
+order_date,
+payment_method
+);
+
+CREATE TABLE products (
+product_id,
+name,
+cost_price,
+sale_price,
+stock_quantity,
+minimum_stock,
+category
+);
+
+CREATE TABLE product_metadata (
+product_id,
+ad_description,
+slogan,
+technical_details,
+brand,
+product_images_id
+);
+
+
+create table order_items(
+order
+);
