@@ -1,31 +1,68 @@
-# Create React App
+# Dark Spectrum
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+<h2>Sobre o Projeto</h2>
 
-## Deploy Your Own
+<p>Este projeto independente consiste no desenvolvimento de um site de e-commerce fictício que tem como orientação mercadológica a venda de sombras. Nossa intenção é criar um <strong>ECOSSISTEMA AUTÔNOMO</strong> de comércio gerenciado por IA, onde a Inteligência Artificial simula todas as funções do site e, através dessa simulação, gera dados para serem apresentados em um <strong>DASHBOARD INTERATIVO</strong> orientado a GESTÃO DE VENDAS, ESTOQUE e FEEDBACK. Além disso, outro diferencial do nosso projeto é o treinamento de IA para a <strong>PREVISÃO DO RENDIMENTO DE PRODUTOS</strong> antes mesmo de serem anunciados.</p>
 
-Deploy your own Create React App project with Vercel.
+<h2>Tecnologias Utilizadas</h2>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/create-react-app&template=create-react-app)
+<table border="1">
+  <tr>
+    <tr>
+      <td rowspan="2">
+        <h3>Backend</h3>
+      </td>
+      <td>
+        <h4>Banco de Dados</h4>
+      </td>
+      <td>
+        <ul>
+          <li>Azure</li>
+          <li>SQL Server</li>
+        </ul>
+      </td>
+    </tr>
+      <td>
+        <h4>API</h4>
+      </td>
+      <td>
+        <ul>
+          <li>Java</li>
+          <li>Spring Boot</li>
+          <li>JPA/Hibernate</li>
+          <li>Maven</li>
+        </ul>
+      </td>
+    </tr>
+  </tr>
+  <tr>
+    <tr>
+      <td rowspan="2">
+        <h3>Frontend</h3>
+      </td>
+      <td>
+        <h4>Site</h4>
+      </td>
+      <td>
+        <ul>
+          <li>Javascript/React</li>
+          <li>SQL Server</li>
+        </ul>
+      </td>
+    </tr>
+      <td>
+        <h4>Dashboard</h4>
+      </td>
+      <td>
+        <ul>
+          <li>Python/Streamlit</li>
+        </ul>
+      </td>
+    </tr>
+  </tr>
+</table>
 
-_Live Example: https://create-react-template.vercel.app/_
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes. You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.
-
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
