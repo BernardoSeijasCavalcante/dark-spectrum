@@ -32,11 +32,13 @@ payment_method
 
 CREATE TABLE products (
 product_id,
+user_id,
 name,
 cost_price,
 sale_price,
 stock_quantity,
 minimum_stock,
+maximum_stock,
 category
 );
 
@@ -46,10 +48,41 @@ ad_description,
 slogan,
 technical_details,
 brand,
-product_images_id
+product_images_id,
+registered_at,
+updated_at
 );
 
+CREATE TABLE product_image(
+product_images_id,
+product_image_url
+);
 
 create table order_items(
-order
+order_id,
+product_id,
+price,
+count
 );
+
+create table feedback(
+feedback_id,
+entity_id,
+type_feedback,
+rating,
+comment,
+likes_count,
+dislikes_count,
+registered_at
+);
+
+create table feedback_comments(
+comment_id,
+feedback_id,
+comment,
+likes_count,
+dislikes_count,
+registered_at
+);
+
+
