@@ -1,31 +1,80 @@
-# Create React App
+# Dark Spectrum
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+<h2>Sobre o Projeto</h2>
 
-## Deploy Your Own
+<p>Este projeto independente consiste no desenvolvimento de um site de e-commerce fictício que tem como orientação mercadológica a venda de sombras. Nossa intenção é criar um <strong>ECOSSISTEMA AUTÔNOMO</strong> de comércio gerenciado por IA, onde a Inteligência Artificial simula todas as funções de usuário do site e, através dessa simulação, gera dados para serem apresentados em um <strong>DASHBOARD INTERATIVO</strong> orientado a gestão de vendas, estoque e feedback. Além disso, outro diferencial do nosso projeto é o treinamento de IA para a <strong>PREVISÃO DO RENDIMENTO DE PRODUTOS</strong> antes mesmo de serem anunciados. Tudo isso com uma DOCUMENTAÇÃO que detalha o porquê de todas as decisões que foram tomadas ao longo do processo.</p>
 
-Deploy your own Create React App project with Vercel.
+<a href="https://dark-spectrum.vercel.app/">LINK PARA O E-COMMERCE!</a>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/create-react-app&template=create-react-app)
+<h2>Etapa de Desenvolvimento</h2>
 
-_Live Example: https://create-react-template.vercel.app/_
+<p>Estamos dando os primeiros passos para a criação das primeiras versões do nosso Mínimo Produto Viável (MVP), que contém somente algumas funções fundamentais do projeto como um todo, conforme o diagrama de exemplo abaixo.</p>
+<a href="https://drive.google.com/file/d/13Qbh4GpZJK8Sq-qgAbFJOKlAYRxPYiug/view?usp=drive_link">DIAGRAMA DO MVP</a>
 
-## Available Scripts
+<p></p>
+<h2>Tecnologias Utilizadas</h2>
 
-In the project directory, you can run:
+<table border="1">
+  <tr>
+    <tr>
+      <td rowspan="2">
+        <h3>Backend</h3>
+      </td>
+      <td>
+        <h4>Banco de Dados</h4>
+      </td>
+      <td>
+        <ul>
+          <img src="https://skillicons.dev/icons?i=azure" title="Azure">
+          SQL Server
+        </ul>
+      </td>
+    </tr>
+      <td>
+        <h4>API</h4>
+      </td>
+      <td>
+        <ul>
+          <img src="https://skillicons.dev/icons?i=java" title="Java">
+          <img src="https://skillicons.dev/icons?i=spring" title="Spring Boot">
+          <img src="https://skillicons.dev/icons?i=hibernate"  title="JPA/Hibernate">
+          <img src="https://skillicons.dev/icons?i=maven"  title="Maven">
+        </ul>
+      </td>
+    </tr>
+  </tr>
+  <tr>
+    <tr>
+      <td rowspan="2">
+        <h3>Frontend</h3>
+      </td>
+      <td>
+        <h4>Site</h4>
+      </td>
+      <td>
+        <ul>
+          <img src="https://skillicons.dev/icons?i=js" title="Javascript">
+          <img src="https://skillicons.dev/icons?i=html" title="HTML">
+          <img src="https://skillicons.dev/icons?i=css" title="CSS">
+          <img src="https://skillicons.dev/icons?i=react" title="React Framework">
+        </ul>
+      </td>
+    </tr>
+      <td>
+        <h4>Dashboard</h4>
+      </td>
+      <td>
+        <ul>
+           <img width="70" height="70" src="https://cdn.freelogovectors.net/wp-content/uploads/2023/11/power-bi-logo-freelogovectors.net_.png" title="Power BI">
+        </ul>
+      </td>
+    </tr>
+  </tr>
+</table>
 
-### `npm start`
 
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes. You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.
-
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
