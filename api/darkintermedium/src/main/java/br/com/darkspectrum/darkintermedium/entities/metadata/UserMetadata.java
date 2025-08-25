@@ -1,0 +1,173 @@
+package br.com.darkspectrum.darkintermedium.entities.metadata;
+
+import java.time.Instant;
+import java.util.Objects;
+
+import br.com.darkspectrum.darkintermedium.entities.User;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.MapsId;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="user_metadata")
+public class UserMetadata {
+
+	@Id
+	@Column(name="user_id")
+	private Long id;
+	private String fullName;
+	private Integer cpf;
+	private Integer rg;
+	private String phothoProfileUrl;
+	private Instant birthDate;
+	private Instant registeredAt;
+	private Instant lastLogin;
+	private Instant lastPurchase;
+	private String createdBy;
+	private Instant updatedAt;
+	
+	@OneToOne
+	@MapsId("id")
+	@JoinColumn(name="user_id")
+	private User user;
+	
+	public UserMetadata() {
+		
+	}
+
+	public UserMetadata(User user, String fullName, Integer cpf, Integer rg, String phothoProfileUrl, Instant birthDate,
+			Instant registeredAt, Instant lastLogin, Instant lastPurchase, String createdBy, Instant updatedAt) {
+		super();
+		this.user = user;
+		this.id = user.getId();
+		this.fullName = fullName;
+		this.cpf = cpf;
+		this.rg = rg;
+		this.phothoProfileUrl = phothoProfileUrl;
+		this.birthDate = birthDate;
+		this.registeredAt = registeredAt;
+		this.lastLogin = lastLogin;
+		this.lastPurchase = lastPurchase;
+		this.createdBy = createdBy;
+		this.updatedAt = updatedAt;
+	}
+	
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	
+	 public User getUser() { return user; }
+	 
+	 public void setUser(User user) { this.user = user; }
+	 
+
+	public String getFullName() {
+		return fullName;
+	}
+
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
+	}
+
+	public Integer getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(Integer cpf) {
+		this.cpf = cpf;
+	}
+
+	public Integer getRg() {
+		return rg;
+	}
+
+	public void setRg(Integer rg) {
+		this.rg = rg;
+	}
+
+	public String getPhothoProfileUrl() {
+		return phothoProfileUrl;
+	}
+
+	public void setPhothoProfileUrl(String phothoProfileUrl) {
+		this.phothoProfileUrl = phothoProfileUrl;
+	}
+
+	public Instant getBirthDate() {
+		return birthDate;
+	}
+
+	public void setBirthDate(Instant birthDate) {
+		this.birthDate = birthDate;
+	}
+
+	public Instant getRegisteredAt() {
+		return registeredAt;
+	}
+
+	public void setRegisteredAt(Instant registeredAt) {
+		this.registeredAt = registeredAt;
+	}
+
+	public Instant getLastLogin() {
+		return lastLogin;
+	}
+
+	public void setLastLogin(Instant lastLogin) {
+		this.lastLogin = lastLogin;
+	}
+
+	public Instant getLastPurchase() {
+		return lastPurchase;
+	}
+
+	public void setLastPurchase(Instant lastPurchase) {
+		this.lastPurchase = lastPurchase;
+	}
+
+	public String getCreatedBy() {
+		return createdBy;
+	}
+
+	public void setCreatedBy(String createdBy) {
+		this.createdBy = createdBy;
+	}
+
+	public Instant getUpdatedAt() {
+		return updatedAt;
+	}
+
+	public void setUpdatedAt(Instant updatedAt) {
+		this.updatedAt = updatedAt;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		UserMetadata other = (UserMetadata) obj;
+		return Objects.equals(id, other.id);
+	}
+
+	
+	
+	
+}

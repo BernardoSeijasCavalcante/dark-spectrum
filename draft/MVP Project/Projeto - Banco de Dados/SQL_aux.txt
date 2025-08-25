@@ -30,6 +30,23 @@ order_date,
 payment_method
 );
 
+create table order_items(
+order_id,
+product_id,
+price,
+count,
+registered_at
+);
+*****(NÃO IMPLEMENTADO NA VERSÃO MVP)****
+create table order_process(
+order_process_id
+order_status,
+status,
+updated_at,
+registered_at,
+);
+
+*****************************************
 CREATE TABLE products (
 product_id,
 user_id,
@@ -58,12 +75,7 @@ product_images_id,
 product_image_url
 );
 
-create table order_items(
-order_id,
-product_id,
-price,
-count
-);
+
 
 create table feedback(
 feedback_id,

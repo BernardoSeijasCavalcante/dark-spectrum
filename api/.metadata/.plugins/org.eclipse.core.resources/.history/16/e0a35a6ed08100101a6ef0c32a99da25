@@ -1,0 +1,5 @@
+package br.com.darkspectrum.darkintermedium.entities;
+
+public class User {
+
+}
